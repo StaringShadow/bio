@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-size: 2100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-card {
+    height: 30rem;
+    width: 25rem;
+    background: #1e272e;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-wrapper {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.first {
+    height: 70%;
+    width: 100%;
+}
+
+.first .picture {
+    height: 70%;
+    padding: 2rem 0;
+}
+
+.picture img {
+    height: 110%;
+    border-radius: 50%;
+    border: 7px solid #FFF;
+    display: block;
+    margin: 0 auto;
+}
+
+.first .info {
+    height: 30%;
+}
+
+.first .my-name {
+    color: #FFF;
+    font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 2.5px solid #FFF;
+    width: 70%;
+}
+
+.first .job {
+    color: #FFF;
+    font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+}
+
+.second {
+    height: 30%;
+    width: 100%;
+}
+
+.second p {
+    color: #FFF;
+    font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 0.5rem;
+}
+
+.second .social {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.social a img {
+    height: 45px;
+    width: 45px;
+    margin: 0 10px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 375px) {
+    .business-card {
+        width: 90%;
+        height: 80%;
+        max-height: 35rem;
+        padding: 1rem 0;
+        box-sizing: content-box;
+    }
+
+    .first .picture {
+        padding: 1rem 0; 
+    } 
+
+    .picture img {
+        height: 100%;
+    }
+}
